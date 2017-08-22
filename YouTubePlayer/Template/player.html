@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>YouTube Player</title>
+<style media="screen">
+body {
+  margin: 0;
+  background-color: black;
+}
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<div id="player"></div>
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+function delegate(id) {
+  window.location.href = `sh-aky-youtube-player:///${id}`;
+}
+
+function onYouTubeIframeAPIReady() {
+  delegate('api-ready');
+
+  window.player = new YT.Player('player', {
+    // https://developers.google.com/youtube/player_parameters?playerVersion=HTML5&hl=ja
+    playerVars: {
+      controls: 0,
+      disablekb: 1,
+      fs: 0,
+      iv_load_policy: 3,
+      playsinline: 1,
+      modestbranding: 1,
+      origin: 'https://ios.vimet.tv',
+      rel: 0,
+      showinfo: 0,
+    },
+    events: {
+      onReady: () => delegate('ready'),
+      onStateChange: ({ data }) => delegate(`state-changed?state=${data}`)
+    }
+  });
+}
+</script>

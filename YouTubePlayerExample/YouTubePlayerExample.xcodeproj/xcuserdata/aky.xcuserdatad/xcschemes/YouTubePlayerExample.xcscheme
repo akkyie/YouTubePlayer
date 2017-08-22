@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2129D5891F4BB2F1004B1B90"
-               BuildableName = "YouTubePlayer.framework"
-               BlueprintName = "YouTubePlayer"
-               ReferencedContainer = "container:YouTubePlayer.xcodeproj">
+               BlueprintIdentifier = "2129D5B31F4BB593004B1B90"
+               BuildableName = "YouTubePlayerExample.app"
+               BlueprintName = "YouTubePlayerExample"
+               ReferencedContainer = "container:YouTubePlayerExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2129D5921F4BB2F1004B1B90"
-               BuildableName = "YouTubePlayerTests.xctest"
-               BlueprintName = "YouTubePlayerTests"
-               ReferencedContainer = "container:YouTubePlayer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2129D5891F4BB2F1004B1B90"
-            BuildableName = "YouTubePlayer.framework"
-            BlueprintName = "YouTubePlayer"
-            ReferencedContainer = "container:YouTubePlayer.xcodeproj">
+            BlueprintIdentifier = "2129D5B31F4BB593004B1B90"
+            BuildableName = "YouTubePlayerExample.app"
+            BlueprintName = "YouTubePlayerExample"
+            ReferencedContainer = "container:YouTubePlayerExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -61,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2129D5891F4BB2F1004B1B90"
-            BuildableName = "YouTubePlayer.framework"
-            BlueprintName = "YouTubePlayer"
-            ReferencedContainer = "container:YouTubePlayer.xcodeproj">
+            BlueprintIdentifier = "2129D5B31F4BB593004B1B90"
+            BuildableName = "YouTubePlayerExample.app"
+            BlueprintName = "YouTubePlayerExample"
+            ReferencedContainer = "container:YouTubePlayerExample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2129D5891F4BB2F1004B1B90"
-            BuildableName = "YouTubePlayer.framework"
-            BlueprintName = "YouTubePlayer"
-            ReferencedContainer = "container:YouTubePlayer.xcodeproj">
+            BlueprintIdentifier = "2129D5B31F4BB593004B1B90"
+            BuildableName = "YouTubePlayerExample.app"
+            BlueprintName = "YouTubePlayerExample"
+            ReferencedContainer = "container:YouTubePlayerExample.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
