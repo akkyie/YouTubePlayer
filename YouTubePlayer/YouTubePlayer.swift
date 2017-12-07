@@ -104,7 +104,7 @@ public class YouTubePlayerView: UIView {
 
 // JavaScript Execution
 extension YouTubePlayerView {
-	fileprivate func evaluate(_ script: String, completion: @escaping () -> Void = { _ in }) {
+	fileprivate func evaluate(_ script: String, completion: @escaping () -> Void = {}) {
 		webView.evaluateJavaScript(script) { [weak delegate] result, error in
 			guard error == nil else {
 				delegate?.playerViewDidFail(error: error, whileExecutingJavaScript: script)
@@ -171,7 +171,7 @@ extension YouTubePlayerView: WKNavigationDelegate {
 
 		policy = .cancel
 
-		let name = path.substring(from: path.index(after: path.startIndex))
+		let name = String(path[path.index(after: path.startIndex)...])
 		guard let delegate = delegate, let event = Event(rawValue: name) else {
 			return
 		}
