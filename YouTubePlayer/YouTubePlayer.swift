@@ -143,6 +143,14 @@ extension YouTubePlayerView {
 		evaluate("!window.player.stopVideo()")
 	}
 
+	public func mute() {
+		evaluate("!window.player.mute()")
+	}
+
+	public func unMute() {
+		evaluate("!window.player.unMute()")
+	}
+
 	public func seek(to seconds: Double) {
 		evaluate("!window.player.seekTo(\(seconds), true)")
 	}
@@ -153,6 +161,10 @@ extension YouTubePlayerView {
 
 	public func getCurrentTime(completion: @escaping (_ currentTime: Double) -> ()) {
 		evaluate("window.player.getCurrentTime()", completion: completion)
+	}
+
+	public func isMuted(completion: @escaping (_ isMuted: Bool) -> ()) {
+		evaluate("window.player.isMuted()", completion: completion)
 	}
 }
 
